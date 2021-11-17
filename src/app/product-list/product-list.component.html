@@ -1,0 +1,23 @@
+<div class="app-product-list" >
+    <h2>Productos</h2>
+    <!--directiva ngfor sirve para recorrer arreglos,lista de objetos etc-->
+    <div *ngFor="let product of products">
+       <h3>
+           <a [title]="product.name + ' details'">
+                {{product.name}}
+           </a>
+       </h3> 
+       <!--directiva ngif creara un elemento <p> solo si el parametro existe o tiene algo-->
+       <p *ngIf="product.description">
+            Description: {{ product.description }}
+       </p>
+       <button (click)="show()">
+           share
+       </button>
+       <app-product-alerts
+            [product]="product"
+            (notify)="onNotify()"
+            >
+        </app-product-alerts>
+    </div>
+</div>

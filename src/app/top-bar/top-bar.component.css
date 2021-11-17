@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1976d2;
+    color: white;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.header > button {
+    align-self: center;
+    height: 50px;
+    width: 100px;
+}
+

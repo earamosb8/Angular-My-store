@@ -1,0 +1,18 @@
+.app-product-list{ 
+    margin-top: 1%;
+    width: 100%;
+    align-self: center;
+    
+}
+
+.app-product-list > div{
+    margin-bottom: 3px;
+}
+
+button{
+    background-color: #1976d2;
+    border: none;
+    height: 25px;
+    width: 75px;
+    color:white;
+}
